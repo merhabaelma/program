@@ -1,0 +1,41 @@
+<link href="" rel="stylesheet" type="text/css" />
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #a86ed4; /* Purple background color */
+    color: #fff; /* White text color */
+    text-align: center;
+    margin: 0;
+}
+
+header {
+    background-color: #76448a; /* Darker purple for the header */
+    padding: 20px;
+}
+
+header h1 {
+    color: white;
+}
+
+section#invitation {
+    margin: 20px;
+    padding: 30px;
+    border-radius: 10px;
+    background-color: rgba(5, 5, 255, 0.9); /* Slightly transparent white background */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+button {
+    padding: 10px 20px;
+    margin: 10px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+footer {
+    background-color: #76448a;
+    padding: 10px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    color: white;
+}
