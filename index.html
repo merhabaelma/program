@@ -1,28 +1,72 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styles.css">
-    <script src="script.js"></script>
-    <title>Will You Go Out With Me?</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Purple Themed Website</title>
+  <style>
+    body {
+      background-color: #8e44ad; /* Purple background color */
+      color: #fff; /* White text color */
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+    }
+
+    header {
+      text-align: center;
+      padding: 20px;
+    }
+
+    section {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-around;
+      padding: 20px;
+    }
+
+    .image-container {
+      width: 20%;
+      margin: 10px;
+      overflow: hidden;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    }
+
+    .image-container img {
+      width: 100%;
+      height: auto;
+      display: block;
+    }
+
+    footer {
+      text-align: center;
+      padding: 20px;
+      background-color: #6c3483; /* Darker purple for the footer */
+    }
+  </style>
 </head>
-<link href="test2.css" rel="stylesheet" type="text/css" />
 <body>
-    <header>
-        <h1>Hey [Her Name]!</h1>
-        <p>I have something important to ask...</p>
-    </header>
 
-    <section id="invitation">
-        <img src="heart.png" alt="Heart icon">
-        <p>Would you like to go out with me?</p>
-        <button onclick="reply('Yes')">Yes</button>
-        <button onclick="reply('No')">No</button>
-    </section>
+  <header>
+    <h1>Welcome to Purple World!</h1>
+  </header>
 
-    <footer>
-        <p>Created with ❤️ by [Your Name]</p>
-    </footer>
+  <section>
+    <!-- 20 image containers with different images -->
+    <?php
+      for ($i = 1; $i <= 20; $i++) {
+        $imagePath = "image" . $i . ".png";
+        echo "<div class='image-container'>
+                <img src='$imagePath' alt='Image $i'>
+              </div>";
+      }
+    ?>
+  </section>
 
-    <script src="script.js"></script>
+  <footer>
+    <p>Thank you for visiting Purple World!</p>
+  </footer>
+
+</body>
+</html>
